@@ -1,0 +1,46 @@
+#animal {
+    position: absolute;
+    transform: skew(0deg, 0deg) scale(1) translate(30px, 20px);
+}
+
+#eat1 {
+    position: absolute;
+    transform: skew(0deg, 0deg) scale(1) translate(-200px, 120px);
+}
+
+#eat2 {
+    position: absolute;
+    transform: skew(0deg, 0deg) scale(1) translate(-150px, 180px);
+}
+
+#eat3 {
+    position: absolute;
+    transform: skew(0deg, 0deg) scale(1) translate(-80px, 210px);
+}
+
+
+#animal3 {
+    position: absolute;
+    transform: skew(0deg, 0deg) scale(0.5) translate(1200px, -320px);
+}
+
+#tire {
+    left: 400px;
+    top: 100px;
+}
+
+
+@keyframes pisuke_slide {
+    50% {
+        left: 70px
+    }
+    100% {
+        left: 60px;
+    }
+}
+
+#rub_pisuke {
+    transform: scale(0.7);
+    left: 660px;
+    /*animation: pisuke_slide 1s infinite;*/
+}

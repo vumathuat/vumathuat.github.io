@@ -1,0 +1,187 @@
+/*@import url(texture.css);*/
+
+body {
+  position: fixed;
+  background-color: #fae1cb;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -150px;
+}
+
+.room {
+  /*transform: scale(1.5);*/
+}
+
+.wall {
+
+}
+
+.wall.out-lft {
+  position: absolute;
+  display: block;
+/*  background-color: #7da1bf;*/
+  width: 1000px;
+  height: 200px;
+  transform: skew(0, -30deg);
+  transform-origin: 100% 100%;
+  top: -200px;
+  left: -900px;
+}
+
+.wall.out-rht {
+	  position: absolute;
+    display: block;
+/*    background-color: green;*/
+    width: 1000px;
+    height: 200px;
+    transform: skew(0deg, 30deg);
+    transform-origin: 0% 0%;
+    top: -200px;
+    left: 100px;
+}
+
+.floor {
+    position: absolute;
+    display: block;
+    width: 1000px;
+    height: 580px;
+    transform: skew(60deg, -30deg) scale(1);
+    /*transform: skew(60deg, 0deg);*/
+    transform-origin: 0% 0%;
+/*    transform: ;*/
+    top: 575px;
+    left: -900px;
+}
+
+
+.door {
+	width: 80px;
+	height: 150px;
+	background-color: #862;
+	transform: translate(300px,50px);
+	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+	box-shadow: 0 -8px 0 0 #740;
+/*             0  10px 0 0 black,
+             0  20px 0 0 black,
+             0  30px 0 0 black,
+             0  40px 0 0 black,
+             0  50px 0 0 black,
+             0  60px 0 0 black,
+             0  70px 0 0 black,
+             0  80px 0 0 black,
+             0  90px 0 0 black,
+             0  100px 0 0 black,
+             0  110px 0 0 black,
+             0  120px 0 0 black,*/
+             /*0  130px 0 0 black;*/
+}
+/**************************/
+/****** slding door *******/
+/**************************/
+@keyframes door_slide_left {
+  from { left: 15% }
+  to { left: 0% }
+}
+@keyframes door_slide_right {
+  from { left: 50% }
+  to { left: 65% }
+}
+#sliding_door1 {
+  width: 200px;
+  height: 180px;
+  transform: translate(200px,20px);
+}
+
+.sliding_door div, img {
+  position: absolute;
+}
+
+.sliding_door img {
+  height: 100%;
+  display:block;
+  margin-left:30%;
+}
+
+.sliding_door>.sliding_door_backgrond {
+  width: 50%;
+  height: 100%;
+  margin-left:25%;
+  background-color: #640;
+}
+
+.sliding_door>.sliding_door_left,.sliding_door_right {
+  width: 35%;
+  height: 100%;
+  background-color: #c0926e;
+}
+
+.sliding_door>.sliding_door_left {
+  left: 15%;
+  animation: door_slide_left 1s ease-in-out infinite;
+}
+
+.sliding_door>.sliding_door_right {
+  left: 50%;
+  animation: door_slide_right 1s ease-in-out infinite;
+}
+
+.sliding_door_left>div,.sliding_door_right>div{
+  border: 1px solid black;
+  height: 20px;
+  width: 10px;
+  margin-left: -5px;
+  background-color: #a87853;
+}
+
+.sliding_door_left>div {
+  left: 80%;
+  top: 50%;
+}
+
+.sliding_door_right>div {
+  left: 20%;
+  top: 50%;
+}
+
+
+/**************************/
+/***** ellipse window *****/
+/**************************/
+#ellipse_window1 {
+  width: 200px;
+  height: 150px;
+  margin-left: 650px;
+  margin-top: 20;
+}
+#ellipse_window1 div, img {
+  position: absolute;
+}
+
+.ellipse_window_border {
+  width: 210px;
+  height: 160px;
+  margin-left: -5px;
+  margin-top: -5px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.ellipse_window_background {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ellipse_window_glass {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 0.8;
+  background: rgb(30,87,153); /* Old browsers */
+  background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+  
+}

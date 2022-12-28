@@ -1,0 +1,119 @@
+#bed1 {
+    transform: translate(790px, 10px);
+    
+   width: 200px;
+   height: 140px;
+}
+
+
+.pisuke-bed {
+   display:block;
+    
+   width: 200px;
+   height: 140px;
+   background-color: white;
+    box-shadow: -1px 1px 0 0 #aaaaaa,
+              -2px 2px 0 0 #aaaaaa, 
+              -3px 3px 0 0 #aaaaaa,
+              -4px 4px 0 0 #aaaaaa,
+              -5px 5px 0 0 #aaaaaa,
+              -6px 6px 0 0 #aaaaaa,
+              -7px 7px 0 0 #aaaaaa,
+              -8px 8px 0 0 #aaaaaa,
+              -9px 9px 0 0 #aaaaaa,
+              -10px 10px 0 0 #aaaaaa;
+/*   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;*/
+   border-radius:         45%  45%  45%  45%  / 55%   55%   35%  35%;
+}
+/*eye*/
+.pisuke-bed .eye {
+    width: 15px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+}
+.pisuke-bed>.eyes {
+    transform: translate(15px, 0px)
+}
+.pisuke-bed .eye-lft {
+    transform: translate(40px, 30px)
+}
+.pisuke-bed .eye-rht {
+    transform: translate(120px, 20px)
+}
+/*blush*/
+.pisuke-bed .blush {
+    width: 30px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 100%;
+}
+.pisuke-bed>.blushes {
+    transform: translate(5px, -10px)
+}
+.pisuke-bed .blush-lft {
+    transform: translate(20px, 30px)
+}
+.pisuke-bed .blush-rht {
+    transform: translate(140px, 10px)
+}
+/*beak*/
+.pisuke-bed .beak {
+    width: 18px;
+    height: 10px;
+    background-color: darkorange;
+    border-radius: 100%;
+}
+.pisuke-bed>.beaks {
+    transform: translate(90px, -40px)
+}
+.pisuke-bed .beak-up {
+    transform: translate(0px, 20px)
+}
+
+.pisuke-bed .beak-bottom {
+    transform: translate(00px, 10px)
+}
+/*feet*/
+.pisuke-bed .feet {
+/*    transform: skew(0deg, -30deg);*/
+/*    width: 10px;*/
+/*    height: 20px;*/
+/*    background-color: saddlebrown;*/
+/*    border-radius: 100%;*/
+}
+.pisuke-bed .feet>div {
+    width: 10px;
+    height: 20px;
+    background-color: saddlebrown;
+    border-radius: 100%;
+/*    transform: rotate(20);*/
+    
+}
+.pisuke-bed>.feets {
+    transform: translate(15px, -20px)
+}
+.pisuke-bed .feet-lft {
+    transform: translate(50px, 30px)
+}
+
+.pisuke-bed .feet-rht {
+    transform: translate(110px, 10px)
+}
+
+
+.glass {
+  /*background-color: aqua;*/
+  width: 100px;
+  height: 100px;
+  transform: skew(0, -30deg) translate(250px, 50px);
+  opacity: 0.8;
+  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+
+/************fountain************/
+.fountain {
+  
+}

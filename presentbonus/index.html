@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>kanahei room</title>
+        <link rel="stylesheet" href="styles/room.css"/>
+        <link rel="stylesheet" href="styles/texture.css"/>
+        <link rel="stylesheet" href="styles/furniture.css"/>
+        <link rel="stylesheet" href="styles/role.css"/>
+        <link rel="shortcut icon" type="image/png" href="fav.png"/>
+        <script type="text/javascript" src="scripts/global.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+      <div class="room" draggable="true" ondragstart="dragstart_body_handler(event);" ondragover="dragover_body_handler(event)">
+        <div class="wall out-lft hearts">
+            <img id="animal3" src="gif/good.gif" style="z-inddex: 1;"/>
+            <div id="ellipse_window1" class="ellipse_window">
+                <div class="ellipse_window_border"></div>
+                <div class="ellipse_window_background"></div>
+                <img id="rub_pisuke" src="gif/rub.gif">
+                <div class="ellipse_window_glass"></div>
+            </div>
+        </div>
+        <div class="wall out-rht wall_paper">
+            <div id="sliding_door1" class="sliding_door">
+                <div class="sliding_door_backgrond"></div>
+                <img src="images/hide.png">
+                <div class="sliding_door_left"><div></div></div>
+                <div class="sliding_door_right"><div></div></div>
+            </div>
+            <!-- <div class="door"></div> -->
+        </div>
+        <div class="floor tatami">
+            <div id="bed1" class="pisuke-bed">
+               <div class="eyes">
+                    <div class="eye eye-lft"></div>
+                    <div class="eye eye-rht"></div>
+                </div>
+                <div class="blushes">
+                    <div class="blush blush-lft"></div>
+                    <div class="blush blush-rht"></div>
+                </div>
+                <div class="beaks">
+                    <div class="beak beak-up"></div>
+                    <div class="beak beak-down"></div>
+                </div>
+                <div class="feets">
+                    <div class="feet feet-lft"><div></div></div>
+                    <div class="feet feet-rht"><div></div></div>
+                </div>
+            </div>
+
+        </div>
+    <!-- <div class="test"></div> -->
+    <style type="text/css">
+        .test {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /*border-radius:  55%   55%   25%  25% / 45%  45%  45%  45% ;*/
+            border-radius: 30% 30% 80% 80% / 30% 30% 10% 10%;
+        }
+    </style>
+     <img id="animal" src="gif/pull.gif" style="z-inddex: 1;"/>
+     <img id="eat1" src="gif/eat1.gif" style="z-inddex: 1;"/>
+     <img id="eat2" src="gif/eat2.gif" style="z-inddex: 1;"/>
+     <img id="eat3" src="gif/eat3.gif" style="z-inddex: 1;"/>
+     <img id="tire" src="images/tire.png" style="z-inddex: 1;"/>
+      </div>
+    </body>
+</html>
