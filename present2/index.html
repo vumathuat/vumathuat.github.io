@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPONGEBOB GAME</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="side start">
+            <!-- <h1>Sponge Bob</br>Square Pants</br>Game</h1> -->
+            <button id="startButton">START</button>
+
+        </div>
+
+        <div>
+            <audio src="audio/sonido_burbuja.mp3" id="audioShoot"></audio>
+            <audio src="audio/splash.mp3" id="audioCollision"></audio>
+            <audio src="audio/music.mp3" id="audioBob"></audio>
+            <audio src="audio/ow.mp3" id="lostLife"></audio>
+            <audio src="audio/gameover.mp3" id="gameOver"></audio>
+        </div>
+
+        <div id="game-board">
+            <div id="game-info">
+                <h3>Lives: <span id="lives" class="instruction"> 3 </span></h3>
+                <h3>High score: <span id="high" class="instruction"> 0 </span></h3>
+                <h3>Score: <span id="score" class="instruction"> 0 </span></h3>
+            </div>
+
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="side">
+            <div>
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Click <strong>START</strong> button</li>
+                    <li>Press Arrow <strong>left / rigth</strong> to Move</li>
+                    <li>Press <strong>S</strong> to Shoot</li>
+                    <li>Click <strong>RESTART</strong> button to play again</button></li>
+                </ol>
+                <div class="patricio">
+                    <img src="./images/patricio.png">
+                </div>
+
+            </div>
+    </main>
+
+    <script>
+        const sizeCanvas = document.getElementById("canvas")
+        sizeCanvas.setAttribute('width', window.innerWidth * .5)
+        sizeCanvas.setAttribute('height', window.innerHeight * .91)
+    </script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/bullet.js"></script>
+    <script type="text/javascript" src="js/enemy.js"></script>
+    <script type="text/javascript" src="js/crazy_enemy.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
